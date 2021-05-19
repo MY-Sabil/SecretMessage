@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <form id="message" class="form">
+                <label class="title">Secret Message</label>
+                <textarea type="text" class="input" id="text" placeholder="Type Here :v"></textarea>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </div>
+            <label id="number">Total Messages Recieved: 0</label>
+            <p>Poorly designed and made by <a href="https://facebook.com/noobbyte001">NinjaByte</a> :3</p>
+    </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBeP4TivjTmPVJIbkll_yh-tm-veXj_8cU",
+    authDomain: "secretninja-2fe42.firebaseapp.com",
+    databaseURL: "https://secretninja-2fe42-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "secretninja-2fe42",
+    storageBucket: "secretninja-2fe42.appspot.com",
+    messagingSenderId: "328098747821",
+    appId: "1:328098747821:web:e572640b1b6fd61419fd24",
+    measurementId: "G-676LVS6B5Z"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</html>
