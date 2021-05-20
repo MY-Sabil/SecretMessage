@@ -23,5 +23,7 @@ document.getElementById('message').addEventListener("submit", function (e) {
         firebase.database().ref('count/').set({
             count : increase
         })
+        
+        alert("Message Sent!")
     })
 })
